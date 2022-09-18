@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.blob-one {
+  border: solid 2px #f92c85;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: transparent;
+  animation: blob-one 10s linear 0s infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes blob-one {
+  0%   {border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
+  25%  {border-radius: 70% 30% 32% 68% / 30% 30% 70% 70%;}
+  50%  {border-radius: 50% 50% 32% 68% / 55% 24% 76% 45%;}
+  75%  {border-radius: 28% 72% 57% 43% / 79% 24% 76% 21%;}
+  100% {border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blob-two {
+  border: solid 2px #f92c85;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: transparent;
+  animation: blob-two 10s linear 0s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes blob-two {
+  0%   {border-radius: 30% 30% 40% 30% / 30% 30% 70% 70%;}
+  25%  {border-radius: 70% 50% 32% 68% / 30% 50% 70% 70%;}
+  50%  {border-radius: 40% 80% 32% 68% / 65% 24% 76% 45%;}
+  75%  {border-radius: 28% 72% 57% 43% / 79% 24% 86% 21%;}
+  100% {border-radius: 30% 70% 70% 30% / 30% 30% 90% 70%;}
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
