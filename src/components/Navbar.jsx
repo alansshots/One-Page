@@ -17,7 +17,7 @@ const Navbar = () => {
                     <NavLink to='/' className="py-2 px-6 flex text-[#f92c85] hover:text-[#f92c85] duration-75 border-b-2 border-[#f92c85]">
                         Home
                     </NavLink>
-                    <NavLink className="py-2 px-6 flex text-[#5ebec4] hover:text-[#f92c85] duration-75">
+                    <NavLink to='/page-builder' className="py-2 px-6 flex text-[#5ebec4] hover:text-[#f92c85] duration-75">
                         Page Builder
                     </NavLink>
                     <NavLink  className="py-2 px-6 flex text-[#5ebec4] hover:text-[#f92c85] duration-75">
